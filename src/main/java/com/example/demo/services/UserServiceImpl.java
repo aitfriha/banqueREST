@@ -18,14 +18,13 @@ import com.example.demo.repositories.UserRepository;
 
 import static com.example.demo.exceptions.MainException.throwException;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+
 
 import static com.example.demo.exceptions.ExceptionType.DUPLICATE_ENTITY;
 import static com.example.demo.exceptions.ExceptionType.ENTITY_NOT_FOUND;
 
 @Service
 @Transactional
-@Slf4j
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
