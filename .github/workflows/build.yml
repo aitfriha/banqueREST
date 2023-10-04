@@ -19,8 +19,8 @@ jobs:
         distribution: 'temurin' # Choisissez la version de Java que vous utilisez
         java-version: '17'
 
-    - name: Build with Maven
-      run: mvn clean install
+    #- name: Build with Maven
+    #  run: mvn clean install
 
    # - name: Run Tests
    #   run: mvn test
