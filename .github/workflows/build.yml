@@ -3,7 +3,7 @@ name: Build and Test
 on:
   push:
     branches:
-      - main # Personnalisez la branche si nécessaire
+      - master # Personnalisez la branche si nécessaire
 
 jobs:
   build:
