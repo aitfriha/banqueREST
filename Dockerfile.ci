@@ -5,10 +5,10 @@ FROM zaidid/zaidrepodocker:alpine
 WORKDIR /app
 
 # Copiez le fichier JAR de votre application Spring Boot dans le conteneur
-#COPY target/mon-application-spring-boot.jar .
+COPY target/mon-application-spring-boot.jar .
 
 # Exposez le port sur lequel votre application Spring Boot écoute (par exemple, 8080)
 EXPOSE 8085
 
 # Définissez la commande pour exécuter votre application Spring Boot
-#CMD ["java", "-jar", "mon-application-spring-boot.jar"]
+CMD ["java", "-jar", "mon-application-spring-boot.jar"]
