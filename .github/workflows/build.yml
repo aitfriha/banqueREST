@@ -11,6 +11,9 @@ jobs:
     services:
       mysql:
         image: mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: bp
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -20,9 +23,15 @@ jobs:
       with:
         distribution: 'temurin' 
         java-version: '17'
+<<<<<<< HEAD
  
+=======
+
+    - name: Install Maven
+      run: |
+        sudo apt-get update -q
+        sudo apt-get install -y maven
+
+>>>>>>> afb72787a47a8927dd5907f13dbfed556f7765f8
     - name: Build with Maven
       run: mvn clean install
-
-   # - name: Run Tests
-   #   run: mvn test
