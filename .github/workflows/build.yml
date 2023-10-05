@@ -13,6 +13,7 @@ jobs:
         image: mysql:latest
         env:
           MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: bp
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
