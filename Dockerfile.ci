@@ -1,14 +1,14 @@
 # Utilisez une image de base avec Java
-#FROM adoptopenjdk/openjdk17:alpine
+FROM adoptopenjdk/openjdk17:alpine
 
 # Définissez le répertoire de travail à l'intérieur du conteneur
 WORKDIR /app
 
 # Copiez le fichier JAR de votre application Spring Boot dans le conteneur
-COPY target/mon-application-spring-boot.jar .
+#COPY target/mon-application-spring-boot.jar .
 
 # Exposez le port sur lequel votre application Spring Boot écoute (par exemple, 8080)
-EXPOSE 8080
+EXPOSE 8085
 
 # Définissez la commande pour exécuter votre application Spring Boot
-CMD ["java", "-jar", "mon-application-spring-boot.jar"]
+#CMD ["java", "-jar", "mon-application-spring-boot.jar"]
