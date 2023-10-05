@@ -36,3 +36,12 @@ jobs:
       run: mvn clean install
     - name: Check target directory
       run: ls -R target
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: zaidid/zaidrepodocker 
+        tags: latest_zaid_tag
+        registry: docker.io
+        dockerfile: Dockerfile.ci
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
