@@ -3,11 +3,11 @@ name: Build and Test
 on:
   push:
     branches:
-      - master # Personnalisez la branche si nécessaire
+      - master 
 
 jobs:
   build:
-    runs-on: ubuntu-latest # Vous pouvez utiliser un autre système d'exploitation si nécessaire
+    runs-on: ubuntu-latest 
 
     steps:
     - name: Checkout code
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Java
       uses: actions/setup-java@v2
       with:
-        distribution: 'temurin' # Choisissez la version de Java que vous utilisez
+        distribution: 'temurin' 
         java-version: '17'
   #  - name: Build and Push Docker Image
   #    uses: mr-smithers-excellent/docker-build-push@v6
