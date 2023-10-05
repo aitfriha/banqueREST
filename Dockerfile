@@ -1,11 +1,9 @@
 # Use an appropriate base image
 FROM openjdk:17
 
-# Set the working directory
-WORKDIR /app
+EXPOSE 8080
 
-# Copy the application JAR file into the container
-COPY target/your-app.jar .
+COPY ./target/banque-0.0.1-SNAPSHOT.jar /usr/app/
+WORKDIR /usr/app
 
-# Specify the command to run your application
-CMD ["java", "-jar", "your-app.jar"]
+ENTRYPOINT ["java", "-jar", "banque-0.0.1-SNAPSHOT.jar"]
