@@ -10,7 +10,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest 
-    container: openjdk:17
+    #container: openjdk:17
     services:
       mysql:
         image: mysql:latest
