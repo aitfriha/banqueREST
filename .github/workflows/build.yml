@@ -27,9 +27,8 @@ jobs:
         dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    steps:
     - name: Build and Push Docker Image
-    - uses: mirromutth/mysql-action@v1.1
+      uses: mirromutth/mysql-action@v1.1
       with:
         host port: 3800 # Optional, default value is 3306. The port of host
         container port: 3307 # Optional, default value is 3306. The port of container
