@@ -39,11 +39,8 @@ jobs:
   docker:
     needs: build
     runs-on: ubuntu-latest
-    container: docker:stable-dind  # Using a Docker-in-Docker (DinD) image
+    container: openjdk:17
     steps:
-    - name: Check out code
-      uses: actions/checkout@v2
-
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
