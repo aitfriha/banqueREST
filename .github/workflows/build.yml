@@ -45,8 +45,5 @@ jobs:
       with:
         image: zaidid/zaidrepodocker 
         registry: docker.io
-        tags: latest
-    - name: Push Docker Image
-      run: |
-        docker login -u zaidid -p dckr_pat_CKdQI9nn5-xcZfR5cQGYOlsg7pc
-        docker push zaidid/zaidrepodocker:latest
+        username: zaidid
+        password: dckr_pat_CKdQI9nn5-xcZfR5cQGYOlsg7pc
