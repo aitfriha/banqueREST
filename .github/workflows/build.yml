@@ -44,7 +44,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
     - name: witch fucking folder i have
-      run: echo "$(pwd)/target"
+      run: Run ls -R (target)
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
