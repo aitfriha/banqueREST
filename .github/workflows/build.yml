@@ -34,7 +34,7 @@ jobs:
       run: mvn clean install
 
     - name: Check target directory
-      run: ls -R target
+      run: echo "$(pwd)/target"
 
   docker:
     needs: build
