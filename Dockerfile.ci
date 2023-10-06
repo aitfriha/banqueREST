@@ -1,14 +1,1 @@
-# Utilisez une image de base avec Java
-FROM zaidid/zaidrepodocker:alpine
 
-# Définissez le répertoire de travail à l'intérieur du conteneur
-WORKDIR /app
-
-# Copiez le fichier JAR de votre application Spring Boot dans le conteneur
-COPY target/mon-application-spring-boot.jar .
-
-# Exposez le port sur lequel votre application Spring Boot écoute (par exemple, 8080)
-EXPOSE 8085
-
-# Définissez la commande pour exécuter votre application Spring Boot
-CMD ["java", "-jar", "mon-application-spring-boot.jar"]
