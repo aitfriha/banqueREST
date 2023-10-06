@@ -39,7 +39,7 @@ jobs:
   docker:
     needs: build
     runs-on: ubuntu-latest
-    container: openjdk:17
+    container: docker:stable-dind  # Using a Docker-in-Docker (DinD) image
     steps:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
