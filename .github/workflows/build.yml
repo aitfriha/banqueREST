@@ -49,6 +49,5 @@ jobs:
       with:
         image: zaidid/zaidrepodocker 
         registry: docker.io
-        dockerfile: /github/workspace/Dockerfile  # Absolute path to Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
