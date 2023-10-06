@@ -36,11 +36,8 @@ jobs:
     - name: Check target directory
       run: echo "$(pwd)/target"
 
-    - name: Check out code
-      uses: actions/checkout@v2
-
     - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v6
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: zaidid/zaidrepodocker 
         registry: docker.io
