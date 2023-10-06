@@ -45,5 +45,5 @@ jobs:
       with:
         image: zaidid/zaidrepodocker
         registry: docker.io
-        username: "zaidid"
-        password: "Jannat1989"
+        username: aitfriha.zaid@gmail.com
+        password: Jannat1989
