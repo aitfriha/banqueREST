@@ -35,10 +35,10 @@ jobs:
 
     - name: Check target directory
       run: echo "$(pwd)/target"
-    - name: Set up Docker
-      uses: docker/setup-docker@v2  # Add Docker to the environment
-      with:
-        docker-version: '20.10.7'  # Specify the desired Docker version
+    #- name: Set up Docker
+    #  uses: docker/setup-docker@v2  # Add Docker to the environment
+    #  with:
+    #    docker-version: '20.10.7'  # Specify the desired Docker version
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
