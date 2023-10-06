@@ -42,5 +42,5 @@ jobs:
         image: zaidid/zaidrepodocker 
         registry: docker.io
         tags: latest
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: "zaidid"
         password: "Jannat1989"
