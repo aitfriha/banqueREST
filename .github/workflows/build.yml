@@ -45,5 +45,5 @@ jobs:
       with:
         image: zaidid/zaidrepodocker
         registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}  
+        username: zaidid
+        password: Jannat1989
