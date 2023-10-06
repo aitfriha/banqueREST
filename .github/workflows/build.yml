@@ -46,4 +46,4 @@ jobs:
         image: zaidid/zaidrepodocker
         registry: docker.io
         username: 'zaidid'
-        password: 'Jannat1989'
+        password: 'dckr_pat_CKdQI9nn5-xcZfR5cQGYOlsg7pc'
