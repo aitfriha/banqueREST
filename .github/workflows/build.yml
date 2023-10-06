@@ -40,10 +40,10 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v6
-      with:
-        image: zaidid/zaidrepodocker
-        registry: docker.io
-        username: Run docker login -u zaidid
-        password: dckr_pat_CKdQI9nn5-xcZfR5cQGYOlsg7pc
+    - name: Build Docker Image
+      run: docker build -t zaidid/zaidrepodocker:latest .
+
+    - name: Push Docker Image
+      run: |
+        docker login -u zaidid -p dckr_pat_CKdQI9nn5-xcZfR5cQGYOlsg7pc
+        docker push zaidid/zaidrepodocker:latest
